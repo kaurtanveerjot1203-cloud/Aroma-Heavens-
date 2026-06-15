@@ -1,0 +1,315 @@
+body{
+    background-color: #F9F6F0    ;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.mainhead{
+    font-family: "cormorant garamond" ;
+    text-align: left;
+    font-size: 300%;
+    color: #65000b ;
+    margin-top: 120px;
+    margin-left: 3rem;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;  
+    color: #65000b;  
+    
+    gap: 40px;
+}
+.nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2px solid #65000b; */
+}
+.nav a{
+    text-decoration: none;
+    color: #65000b;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+.nav span{
+    color: #65000b;
+    font-family: cormorant garamond;
+    font-size: 1.8rem;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0%;
+}
+.nav a:hover{
+    color: #460009;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+.hero{
+    background-image: url(heroo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button button{
+    background-color: #65000b;
+    color: #F9F6F0;
+    border-radius: 1.1rem;
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    padding: 1.2rem 1.2rem;
+}
+.button button a{
+    text-decoration: none;
+    color: #F9F6F0;
+}
+.button :hover{
+    background-color: #460009;
+    color: #F9F6F0;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+.catbar ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;  
+    color: #65000b;  
+    
+    gap: 150px;
+}
+.catbar{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2px solid #65000b; */
+}
+.catbar a{
+    text-decoration: none;
+    color: #65000b;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+.catbar a:hover{
+    color: #460009;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+.prodcan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.2rem;
+    /* width: 17%; */
+}
+.prodcard{
+    width: 17rem;
+    text-align: center;
+    color: #65000b;
+    background-color: #e8dbc5;
+    border-radius: 1.2rem;
+    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: cormorant garamond;
+    transition: opacity 0.5s ease-in-out;
+}
+.prodcard:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+.prodimg img{
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+}
+.price{
+    font-family: cormorant garamond;
+    font-size: 200%;
+}
+.prodper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.2rem;
+    display: none;
+}
+.gc {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.Bestseller {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.fade-hide {
+    opacity: 0;
+    transform: translateY(10px); /* Subtle premium effect: drops it down slightly */
+}
+/* The Animation Blueprint */
+@keyframes luxuryFade {
+    from {
+        opacity: 0;
+        transform: translateY(15px); /* Starts slightly lower down */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    /* Drifts up to its perfect spot */
+    }
+}
+
+
+/* The Trigger Class */
+.animate-fade {
+    animation: luxuryFade 0.6s ease-out forwards;
+}
+.abt{
+    background-color: #65000b;
+    color: #F9F6F0;
+    padding-top: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.abti img{
+    width: 47%;
+    height: 30rem;
+    padding: 4rem;
+    object-fit: cover;
+    margin-left: 10rem;
+}
+.abtp{
+    width: 47%;
+    padding: 1rem;
+    font-family: cormorant garamond;
+    font-size: 200%;
+    flex-direction: column;
+    transform: translateY(0rem);
+}
+.abti{
+    width: 47%;
+}
+.div{
+    width: 0.1rem;
+    height: 20rem;
+    background-color: #F9F6F0;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F6F0;
+    padding: 4rem;
+    color: #65000b;
+}
+.contlft{
+    width: 47%;
+}
+.contryt{
+    width: 47%;
+}
+.contryt img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center 28%;
+}
+.contform{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.contform input, 
+.contform textarea{
+    padding: 1rem;
+    border: 1px solid #65000b;
+    border-radius: 1.2rem;
+    font-family: cormorant garamond;
+    font-size: 1.1rem;
+}
+.contform textarea{
+    height: 8rem;
+    resize: none;
+}
+
+.contform button{
+    background-color: #65000b;
+    color: #F9F6F0;
+
+    border: none;
+    border-radius: 1.2rem;
+
+    padding: 1rem;
+
+    cursor: pointer;
+}
+
+.contform button:hover{
+    background-color: #460009;
+    transition: 0.3s ease;
+}
+.footer{
+    background-color: #65000b;
+    color: #F9F6F0;
+    padding: 4rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-brand{
+    width: 40%;
+}
+
+.footer-links{
+    width: 20%;
+}
+
+.footer-contact{
+    width: 40%;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #F9F6F0;
+}
+
+.footer-bottom{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #F9F6F0;
+    text-align: center;
+}
